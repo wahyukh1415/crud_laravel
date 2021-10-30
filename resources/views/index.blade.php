@@ -6,7 +6,7 @@
 <div class="container">
     <div class="row">
         <div class="col-10">
-            <h1>Hello Mahasiswa</h1>
+            <h1>List Mahasiswa</h1>
 
             <table class="table">
                 <thead class="thead-dark">
@@ -20,16 +20,20 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach($mahasiswa as $mhs)
+                    @foreach($students as $student)
                     <tr>
                         <td scope="row">{{ $loop->iteration }}</td>
-                        <td> {{ $mhs->nama }}</td>
-                        <td> {{ $mhs->nrp }} </td>
-                        <td> {{ $mhs->email }} </td>
-                        <td> {{ $mhs->jurusan }} </td>
+                        <td> {{ $student->nama }}</td>
+                        <td> {{ $student->nrp }} </td>
+                        <td> {{ $student->email }} </td>
+                        <td> {{ $student->jurusan }} </td>
                         <td>
-                            <button type="button" href="" class="btn btn-success">Edit</button>
-                            <button type="button" href="" class="btn btn-danger">Hapus</button>
+                        <a href="{{$student->id}}/edit" class="btn btn-success">Edit</a>
+                        <form action="/students/{{$student->id}}" method="post" class="d-inline">
+                            @method('delete')
+                            @csrf
+                            <button type="submit" class="btn btn-danger">Hapus</button>
+                        </form>
                         </td>
                     </tr>
                     @endforeach

@@ -47,6 +47,7 @@
                     @enderror
                 </div>
                 <button type="submit" class="btn btn-primary">Tambah data</button>
+                <a href="/students" class="btn btn-secondary">Kembali</a>
             </form>
         </div>
     </div>

@@ -22,9 +22,9 @@ use Illuminate\Support\Facades\Route;
 //     return view('about', ['nama' => $nama]);
 // });
 
-Route::get('/', 'App\Http\Controllers\PagesController@home');
+Route::get('/home', 'App\Http\Controllers\PagesController@home');
 Route::get('/about', 'App\Http\Controllers\PagesController@about');
-Route::get('/mahasiswa', 'App\Http\Controllers\MahasiswaCOntroller@index');
+Route::get('/mahasiswa', 'App\Http\Controllers\MahasiswaController@index');
 
 //students
 // Route::get('/students', 'App\Http\Controllers\StudentsController@index');

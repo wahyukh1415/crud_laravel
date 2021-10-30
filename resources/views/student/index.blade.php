@@ -19,7 +19,7 @@
             @foreach ($students as $student)
             <ul class="list-group">
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    {{$student->nama}}
+                    {{$student->nama}} <span>( {{$student->nrp}} )</span> 
                     <a href="/students/{{$student->id}}" class="btn btn-info">detail</a>
                 </li>
             @endforeach

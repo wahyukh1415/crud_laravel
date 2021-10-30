@@ -48,6 +48,7 @@
                     @enderror
                 </div>
                 <button type="submit" class="btn btn-primary">Ubah data</button>
+                <a href="/students/{{$student->id}}" class="btn btn-secondary">Kembali</a>
             </form>
         </div>
     </div>

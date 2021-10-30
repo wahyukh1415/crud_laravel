@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\Student;
 
 class PagesController extends Controller
 {
@@ -14,7 +15,8 @@ class PagesController extends Controller
      */
     public function home()
     {
-        return view('index');
+        $students = Student::all();
+        return view('home', compact('students'));
     }
 
     public function about()

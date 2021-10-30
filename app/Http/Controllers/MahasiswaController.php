@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use App\Models\mahasiswa;
+// use App\Models\mahasiswa;
+use App\Models\Student;
 
 class MahasiswaController extends Controller
 {
@@ -17,8 +18,10 @@ class MahasiswaController extends Controller
     {
         //
         // $laravel = DB::table('students')->get();
-        $mahasiswa = Mahasiswa::all();
-        return view('index', ['mahasiswa' => $mahasiswa]);
+        // $mahasiswa = Mahasiswa::all();
+        // return view('index', ['mahasiswa' => $mahasiswa]);
+        $students = Student::all();
+        return view('index', compact('students'));
     }
 
     /**
