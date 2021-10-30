@@ -16,16 +16,24 @@
                 </div>
                 <ul class="list-group">
                     <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="">
                         <i class="fas fa-users">Friends</i>
+                    </a>    
                     </li>
                     <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="">
                         <i class="fas fa-users">Group</i>
+                    </a>    
                     </li>
                     <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="">
                         <i class="fas fa-users">Activity</i>
+                    </a>    
                     </li>
                     <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="">
                         <i class="fa fa-users">Message</i>
+                    </a>    
                     </li>
                 </ul>
             </div>
@@ -39,7 +47,13 @@
             </div>
             <div class="card">
                 <div class="card-body p-3">
-                    This is some text within a card body.
+                    <p>
+                        This is some text within a card body.
+                    </p> 
+                    <button class="btn btn-success">Edit</button>
+                    <form class="d-inline">
+                        <button type="submit" class="btn btn-danger">Hapus</button>
+                    </form>
                 </div>
             </div>
         </div>
